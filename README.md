@@ -1,27 +1,25 @@
-## Welcome to GitHub Pages
+## Ke Negócios Ads
 
-You can use the [editor on GitHub](https://github.com/kenegocios/ads/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
-
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+Você pode usar o [editor no GitHub] (https://github.com/kenegocios/ads/edit/master/README.md) para manter e visualizar o conteúdo do seu site nos arquivos Markdown.
 
 ### Markdown
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+O Markdown é uma sintaxe leve e fácil de usar para modelar sua escrita. Inclui convenções para
 
 ```markdown
-Syntax highlighted code block
+Bloco de código destacado da sintaxe
 
 # Header 1
 ## Header 2
 ### Header 3
 
-- Bulleted
-- List
+- Com marcadores
+- Lista
 
-1. Numbered
-2. List
+1. Numberedo
+2. Lista
 
-**Bold** and _Italic_ and `Code` text
+**Negrito** and _Italico_ and `Codigo` text
 
 [Link](url) and ![Image](src)
 ```
