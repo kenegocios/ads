@@ -1,12 +1,9 @@
-## Ke Negócios Ads
+## Ke Negócios ADS
+Você pode usar o [https://kenegocios.github.io/ads/] (https://github.com/kenegocios/ads/edit/master/README.md) para manter e visualizar o conteúdo do seu site nos arquivos Markdown.
 
-Você pode usar o [editor no GitHub] (https://github.com/kenegocios/ads/edit/master/README.md) para manter e visualizar o conteúdo do seu site nos arquivos Markdown.
-
-### Markdown
-
+## Markdown
 O Markdown é uma sintaxe leve e fácil de usar para modelar sua escrita. Inclui convenções para
 
-```markdown
 Bloco de código destacado da sintaxe
 
 # Header 1
@@ -22,14 +19,13 @@ Bloco de código destacado da sintaxe
 **Negrito** and _Italico_ and `Codigo` text
 
 [Link](url) and ![Image](src)
-```
+Para obter mais detalhes, consulte o GitHub Flavored Markdown.
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+Temas de Jekyll
+Seu site Páginas usará o layout e os estilos do tema Jekyll selecionados nas configurações do repositório. O nome deste tema é salvo no arquivo de configuração Jekyll._config.yml
 
-### Jekyll Themes
+Suporte ou Contato
+Tendo problemas com páginas? Confira nossa documentação ou suporte de contato e nós vamos ajudá-lo a resolver isso.
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/kenegocios/ads/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+ads é mantido por kenegocios.
+Esta página foi gerada por Páginas do GitHub.
