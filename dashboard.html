@@ -41,17 +41,42 @@
       <div class="w3-top">
             
          <div class="w3-bar w3-blue w3-blue w3-top w3-left-align w3-large">
-         
-         	<!-- Script Translator Google -->
-   			<div id="google_translate_element" class="w3-top w3-right-align"></div>
-    		<script type="text/javascript">
-				function googleTranslateElementInit() {
-  				new google.translate.TranslateElement({pageLanguage: 'pt-br', layout: 							google.translate.TranslateElement.InlineLayout.SIMPLE}, 										'google_translate_element');
-				}
-			</script>
-			<script type="text/javascript" src="//translate.google.com/translate_a/element.js?					cb=googleTranslateElementInit">
-            </script>
-            <!-- Script Translator Google -->
+        
+<!-- Script Translator Google - Modo 1-->
+		 <!--
+<div id="google_translate_element" class="w3-top w3-right-align"></div>
+<script type="text/javascript">
+function googleTranslateElementInit() {
+new google.translate.TranslateElement({pageLanguage: 'pt-br', layout:google.translate.TranslateElement.InlineLayout.SIMPLE}, 										'google_translate_element');
+}
+</script>
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">
+</script>
+		 -->
+<!-- Script Translator Google -->
+		 
+<!-- Script Translator Google - Modo 2 -->
+		 <!--
+This code will translate page contents automatically (without user input)
+Settings located at line 9, current script will translate english to estonian
+
+<style>#google_translate_element,.skiptranslate{display:none;}body{top:0!important;}</style>
+<div id="google_translate_element"></div>
+<script>
+    function googleTranslateElementInit() {
+        new google.translate.TranslateElement({
+            pageLanguage: 'en', 
+            includedLanguages: 'et', 
+            autoDisplay: false
+        }, 'google_translate_element');
+        var a = document.querySelector("#google_translate_element select");
+        a.selectedIndex=1;
+        a.dispatchEvent(new Event('change'));
+    }
+</script>
+<script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+		-->
+<!--Script Translator Google (Final)-->
             
             <a class="w3-bar-item w3-button w3-left w3-hide-white w3-hover-white w3-large w3-white" href="javascript:void(0)" onclick="w3_open()"><i class="fa fa-bars"></i></a>
             <a href="./ads/dashboard" class="w3-bar-item w3-button w3-blue w3-hover-white">KeBlog</a>
