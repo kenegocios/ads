@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">   
+<html>
    <head>
       <title>KeBlog</title>
       <meta charset="UTF-8">
@@ -13,38 +13,117 @@
       <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
       <base href="https://kenegocios.github.io">
+      <style>
+         html,body,h1,h2,h3,h4,h5,h6 {font-family: "arial", sans-serif;}
+         h2 {
+         opacity: 100;
+         border-radius:15px;
+         font-size:32px;
+         }
+         h2:hover {
+         opacity: 0.7
+         }
+         .w3-sidebar {
+         z-index: 3;
+         width-max: 33%;
+         width: 300px;
+         top: 43px;
+         bottom: 0;
+         height: inherit;
+         }
+         a {
+         text-decoration: none;
+         cursor: pointer;
+         }
+         a:hover {
+         opacity: 0.7
+         }
+         img {border-radius:8px;}
+         /* The Modal (background) */
+         .modal {
+         display: none; /* Hidden by default */
+         position: fixed; /* Stay in place */
+         z-index: 1; /* Sit on top */
+         padding-top: 100px; /* Location of the box */
+         left: 0;
+         top: 0;
+         width: 100%; /* Full width */
+         height: 100%; /* Full height */
+         overflow: auto; /* Enable scroll if needed */
+         background-color: rgb(0,0,0); /* Fallback color */
+         background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+         }
+         /* Modal Content */
+         .modal-content {
+         position: relative;
+         background-color: #fefefe;
+         margin: auto;
+         padding: 0;
+         border: 1px solid #888;
+         width: 80%;
+         box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+         -webkit-animation-name: animatetop;
+         -webkit-animation-duration: 0.4s;
+         animation-name: animatetop;
+         animation-duration: 0.4s
+         }
+         /* Add Animation */
+         @-webkit-keyframes animatetop {
+         from {top:-300px; opacity:0} 
+         to {top:0; opacity:1}
+         }
+         @keyframes animatetop {
+         from {top:-300px; opacity:0}
+         to {top:0; opacity:1}
+         }
+         /* The Close Button */
+         .close {
+         color: white;
+         float: right;
+         font-size: 28px;
+         font-weight: bold;
+         }
+         .close:hover,
+         .close:focus {
+         color: #000;
+         text-decoration: none;
+         cursor: pointer;
+         }
+         .modal-header {
+         padding: 2px 16px;
+         background-color: #5cb85c;
+         color: white;
+         }
+         .modal-body {padding: 2px 16px;}
+         .modal-footer {
+         padding: 2px 16px;
+         background-color: #5cb85c;
+         color: white;
+         }
+      </style>
+      <!-- Trigger/Open The Modal -->
+      <!-- The Modal -->
+      <div id="myModal" class="modal">
+         <!-- Modal content -->
+         <div class="modal-content">
+            <div class="modal-header w3-theme">
+               <span class="close">&times;</span>
+               <h2>KeBlog - Seja Bem Vindo</h2>
+            </div>
+            <div class="modal-body">
+               <h4>
+               <b>Neste Blog você encontrará dicas de:</b></h5>
+               <h5>Como ganhar dinheiro com Produtos PLR.</h5>
+               <h5>Como criar seu primeiro Produto PLR.</h5>
+               <h5>Como vender seu Produtos PLR.</h5>
+            </div>
+            <div class="modal-footer w3-theme">
+               <h3 onclick="modal.style.display = 'none';" style="cursor: pointer">Continuar no site</h3>
+            </div>
+         </div>
+      </div>
    </head>
-   <style>
-      html,body,h1,h2,h3,h4,h5,h6 {font-family: "arial", sans-serif;}
-      h2 {
-      opacity: 100;
-      border-radius:15px;
-      font-size:32px;
-      }
-      h2:hover {
-      opacity: 0.7
-      }
-      .w3-sidebar {
-      z-index: 3;
-      width-max: 33%;
-      width: 300px;
-      top: 43px;
-      bottom: 0;
-      height: inherit;
-      }
-      a {
-      text-decoration: none;
-      cursor: pointer;
-      }
-      a:hover {
-      opacity: 0.7
-      }
-      img {border-radius:8px;}
-   </style>
-   <!--<script src='https://kit.fontawesome.com/a076d05399.js'>-->
-   <!--// Carregue um pack de design de icones (Tema)-->
-   <!--</script>-->
-   <body>
+   <body id="myBody">
       <!-- Navbar -->
       <div class="w3-top">
          <div class="w3-bar w3-white w3-top w3-left-align w3-large">
@@ -281,6 +360,33 @@
          function w3_close() {
            mySidebar.style.display = "none";
            overlayBg.style.display = "none";
+         }
+      </script>
+      <script>
+         // Get the modal
+         var modal = document.getElementById("myModal");
+         
+         // Get the modal no carregamento
+         var  myBody = document.getElementById("myBody");
+         
+         // Get the <span> element that closes the modal
+         var span = document.getElementsByClassName("close")[0];
+         
+         // When the user clicks the button, open the modal 
+         myBody.onload = setTimeout(function() {
+           modal.style.display = "block";
+         }, 13000)
+         
+         // When the user clicks on <span> (x), close the modal
+         span.onclick = function() {
+           modal.style.display = "none";
+         }
+         
+         // When the user clicks anywhere outside of the modal, close it
+         window.onclick = function(event) {
+           if (event.target == modal) {
+             modal.style.display = "none";
+           }
          }
       </script>
    </body>
