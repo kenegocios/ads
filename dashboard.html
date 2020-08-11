@@ -122,6 +122,9 @@
             </div>
          </div>
       </div>
+      <script id="tmodal">
+      var tmodal = "5000"
+      </script>
    </head>
    <body id="myBody">
       <!-- Navbar -->
@@ -375,7 +378,7 @@
          // When the user clicks the button, open the modal 
          myBody.onload = setTimeout(function() {
            modal.style.display = "block";
-         }, 1000)
+         }, tmodal)
          
          // When the user clicks on <span> (x), close the modal
          span.onclick = function() {
