@@ -43,7 +43,7 @@
          .modal {
          display: none; /* Hidden by default */
          position: fixed; /* Stay in place */
-         z-index: 1; /* Sit on top */
+         z-index: 4; /* Sit on top */
          padding-top: 100px; /* Location of the box */
          left: 0;
          top: 0;
@@ -103,7 +103,7 @@
       </style>
       <!-- Trigger/Open The Modal -->
       <!-- The Modal -->
-      <div id="myModal" class="modal">
+      <div id="myModal" class="modal w3-collapse w3-overlay w3-xlarge" style="overflow:hidden">
          <!-- Modal content -->
          <div class="modal-content">
             <div class="modal-header w3-theme">
@@ -162,7 +162,7 @@
       </nav>
       <!-- Efeito de sobreposição ao abrir a barra lateral em telas pequenas -->
       <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="Voltar" id="myOverlay"></div>
-      <!-- Conteúdo principal: desloque-o para a direita em 250 pixels quando a barra lateral estiver visível -->
+      <!-- Conteúdo principal: desloque-o para a direita em 300 pixels quando a barra lateral estiver visível -->
       <div class="w3-main" style="margin-left:300px; width:100% width-max:100px">
       <!-- Bloco Vertical 1 Em construção -->
       <div class="w3-row w3-padding-64" style="margin-center; padding:0px">
@@ -375,7 +375,7 @@
          // When the user clicks the button, open the modal 
          myBody.onload = setTimeout(function() {
            modal.style.display = "block";
-         }, 13000)
+         }, 1000)
          
          // When the user clicks on <span> (x), close the modal
          span.onclick = function() {
