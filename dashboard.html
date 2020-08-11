@@ -44,12 +44,12 @@
          display: none; /* Hidden by default */
          position: fixed; /* Stay in place */
          z-index: 4; /* Sit on top */
-         padding-top: 100px; /* Location of the box */
+         padding-top: 0px; /* Location of the box */
          left: 0;
          top: 0;
          width: 100%; /* Full width */
          height: 100%; /* Full height */
-         overflow: auto; /* Enable scroll if needed */
+         overflow:hidden; /* Enable scroll if needed */
          background-color: rgb(0,0,0); /* Fallback color */
          background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
          }
@@ -60,7 +60,7 @@
          margin: auto;
          padding: 0;
          border: 1px solid #888;
-         width: 80%;
+         width: auto;
          box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
          -webkit-animation-name: animatetop;
          -webkit-animation-duration: 0.4s;
@@ -103,28 +103,29 @@
       </style>
       <!-- Trigger/Open The Modal -->
       <!-- The Modal -->
-      <div id="myModal" class="modal w3-collapse w3-overlay w3-xlarge" style="overflow:hidden">
+      <div id="myModal" class="modal w3-collapse w3-overlay w3-xlarge">
          <!-- Modal content -->
          <div class="modal-content">
-            <div class="modal-header w3-theme">
+            <div class="modal-header w3-theme">            
                <span class="close">&times;</span>
-               <h2>KeBlog - Seja Bem Vindo</h2>
+               <i class='fas fa-bell' style='font-size:20px;color:white;cursor: pointer;'></i>
+               <spam style='font-size:20px;color:white;cursor: pointer;'>Como ganhar dinheiro com Produtos PLR?</span>
             </div>
             <div class="modal-body">
-               <h4>
-               <b>Neste Blog você encontrará dicas de:</b></h5>
-               <h5>Como ganhar dinheiro com Produtos PLR.</h5>
-               <h5>Como criar seu primeiro Produto PLR.</h5>
-               <h5>Como vender seu Produtos PLR.</h5>
+               <h5>Olá, Tudo bem?</h5>
+               <h5>Aqui você aprenderá a ganhar dinheiro com produtos PLR e como funciona esse mercado lucrativo!</h5>
+               <h5>Ahh! não precisa investimento ou gastos extras. Super Simples!</h5>
             </div>
-            <div class="modal-footer w3-theme">
-               <h3 onclick="modal.style.display = 'none';" style="cursor: pointer">Continuar no site</h3>
+            <div class="modal-footer w3-theme w3-right-align">            
+            <span onclick="modal.style.display = 'none';" style='font-size:20px;cursor: pointer;'>Avançar  <i class='fas fa-user-check'></i></span>
+               
             </div>
          </div>
       </div>
       <script id="tmodal">
-      var tmodal = "5000"
+      var tmodal = "1000"
       </script>
+      <script src='https://kit.fontawesome.com/a076d05399.js'></script>
    </head>
    <body id="myBody">
       <!-- Navbar -->
