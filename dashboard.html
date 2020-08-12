@@ -1,324 +1,334 @@
 <!DOCTYPE html>
 <html>
-   <head>
-      <title>KeBlog</title>
-      <meta charset="UTF-8">
-      <meta name="author" content="KeBlog" />
-      <meta name="keywords" content="KeBlog, Kenegocios, Kenegócios, github.com, kenegocios.github, Kenegocios github, KeBlog github, PLR, Produtos PLR, PLR Gratuito, Ganhe dinheiro com PLR, Como Ganhar Dinheiro com PLR, Ganhe dinheiro com Produtos PLR, Como Ganhar dinheiro com Produtos PLR" />
-      <meta name="description" content="Ganhe dinheiro com Produtos PLR de qualidade, saiba como ganhar dinheiro nesse mercado." />
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-      <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-blue.css">
-      <!-- Temas sugeridos -->
-      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-      <base href="https://kenegocios.github.io">
-      <link rel="stylesheet" href="./ads/loader.css">
-      <link rel="stylesheet" href="./ads/style.css">
-      <!-- Trigger/Open The Modal -->
-      <!-- The Modal -->
-      <div id="myModal" class="modal w3-collapse w3-overlay w3-xlarge">
-         <!-- Modal content -->
-         <div class="modal-content">
-            <div class="modal-header w3-theme">
-               <span class="close">&times;</span>
-               <i class='fas fa-bell' style='font-size:20px;color:white;cursor: pointer;'></i>
-               <spam style='font-size:20px;color:white;cursor: pointer;'>
-               Como ganhar dinheiro com Produtos PLR?</span>
+    <head>
+        <title>KeBlog</title>
+        <meta charset="UTF-8">
+        <meta name="author" content="KeBlog" />
+        <meta name="keywords" content="KeBlog, Kenegocios, Kenegócios, github.com, kenegocios.github, Kenegocios github, KeBlog github, PLR, Produtos PLR, PLR Gratuito, Ganhe dinheiro com PLR, Como Ganhar Dinheiro com PLR, Ganhe dinheiro com Produtos PLR, Como Ganhar dinheiro com Produtos PLR" />
+        <meta name="description" content="Ganhe dinheiro com Produtos PLR de qualidade, saiba como ganhar dinheiro nesse mercado." />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-blue.css">
+        <!-- Temas sugeridos -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <base href="https://kenegocios.github.io">
+        <link rel="stylesheet" href="./ads/loader.css">
+        <link rel="stylesheet" href="./ads/style.css">
+        <!-- Trigger/Open The Modal -->
+        <!-- The Modal -->
+        <div id="myModal" class="modal w3-collapse w3-overlay w3-xlarge">
+            <!-- Modal content -->
+            <div class="modal-content">
+                <div class="modal-header w3-theme">
+                    <span class="close">&times;</span>
+                    <i class='fas fa-bell' style='font-size:20px;color:white;cursor: pointer;'></i>
+                    <spam style='font-size:20px;color:white;cursor: pointer;'>
+                    Como ganhar dinheiro com Produtos PLR?</span>
+                </div>
+                <div class="modal-body" style="text-align:justify">
+                    <h5>Olá, Tudo bem?</h5>
+                    <h5>Aqui você aprenderá a ganhar dinheiro com produtos PLR e como funciona esse mercado lucrativo!</h5>
+                    <h5>Ahh! não precisa investimento ou gastos extras. Super Simples!</h5>
+                </div>
+                <div class="modal-footer w3-theme w3-right-align">            
+                    <span onclick="modal.style.display = 'none';" style='font-size:20px;cursor: pointer;'>Avançar  <i class='fas fa-user-check'></i></span>
+                </div>
             </div>
-            <div class="modal-body" style="text-align:justify">
-               <h5>Olá, Tudo bem?</h5>
-               <h5>Aqui você aprenderá a ganhar dinheiro com produtos PLR e como funciona esse mercado lucrativo!</h5>
-               <h5>Ahh! não precisa investimento ou gastos extras. Super Simples!</h5>
+        </div>
+        <!-- Controle de Tempo - TimeEvents-->       
+        <script id="TimeEvents">
+            // 1000 = 1 segundo
+            // Controle de Eventos ao Carregar o Documento
+            	 // Inicie após segundos
+            	 var tIniciar = 0; // "0" Imediatamente
+               // Exibe Carregador e o finaziza após segundos
+               var tLoader = 3000;
+               // Exibe o Modal após segundos 
+               var tModal = 12000;
+        </script>
+        <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    </head>
+    <body id="myBody" style="display:none;">
+        <div id="loader"></div>
+        <div style="display:none;" id="myDiv" class="animate-bottom">
+        <!-- Navbar -->
+        <div class="w3-top">
+            <div class="w3-bar w3-white w3-top w3-left-align w3-large">
+                <a class="w3-bar-item w3-button w3-left w3-hide-white w3-hover-theme w3-large w3-theme" href="javascript:void(0)" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+                <a href="./ads/dashboard" class="w3-bar-item w3-button w3-white w3-text-theme w3-hover-theme">KeBlog</a>
+                <a href="./ads/idplr" class="w3-bar-item w3-button w3-white w3-text-theme w3-hover-theme">Sobre</a>
+                <!-- Em construção
+                    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Values</a>
+                    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hover-white">News</a>
+                    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Contatos</a>
+                    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hide-medium w3-hover-white">Clientes</a>
+                    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hide-medium w3-hover-white">Parceiros</a>
+                    -->
             </div>
-            <div class="modal-footer w3-theme w3-right-align">            
-               <span onclick="modal.style.display = 'none';" style='font-size:20px;cursor: pointer;'>Avançar  <i class='fas fa-user-check'></i></span>
-            </div>
-         </div>
-      </div>
-      <script id="tmodal">
-         var tmodal = "10000";
-         var tloader = "3000";
-      </script>
-      <script src='https://kit.fontawesome.com/a076d05399.js'></script>
-   </head>
-   <body id="myBody">
-      <div id="loader"></div>
-      <div style="display:none;" id="myDiv" class="animate-bottom">
-      <!-- Navbar -->
-      <div class="w3-top">
-         <div class="w3-bar w3-white w3-top w3-left-align w3-large">
-            <a class="w3-bar-item w3-button w3-left w3-hide-white w3-hover-theme w3-large w3-theme" href="javascript:void(0)" onclick="w3_open()"><i class="fa fa-bars"></i></a>
-            <a href="./ads/dashboard" class="w3-bar-item w3-button w3-white w3-text-theme w3-hover-theme">KeBlog</a>
-            <a href="./ads/idplr" class="w3-bar-item w3-button w3-white w3-text-theme w3-hover-theme">Sobre</a>
-            <!-- Em construção
-               <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Values</a>
-               <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hover-white">News</a>
-               <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Contatos</a>
-               <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hide-medium w3-hover-white">Clientes</a>
-               <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hide-medium w3-hover-white">Parceiros</a>
-               -->
-         </div>
-      </div>
-      <!-- Sidebar -->
-      <nav class="w3-sidebar w3-bar-block w3-collapse w3-large w3-theme-l5 w3-animate-left" id="mySidebar">
-         <center>
-            <a href="javascript:void(0)" onclick="w3_close()" class="w3-center w3-white w3-xlarge w3-padding-16  w3-hover-theme w3-hide-large" title="Voltar">
-            <i class="fa fa-arrow-left" style="width:100%"></i>
-            </a>				
-         </center>
-         </a>
-         <h5 class="w3-bar-item w3-theme w3-text-white">PLR - Negócio Lucrativo <span class="fas fa-hand-holding-usd w3-theme" style='font-size:18px'></span></h5>
-         <a class="w3-bar-item w3-button w3-white w3-hover-theme" href="./ads/idplr">O que é "PLR"?</a>
-         <a class="w3-bar-item w3-button w3-white w3-hover-theme" href="./ads/idplr">Como usar um Produto PLR?</a>
-         <a class="w3-bar-item w3-button w3-white w3-hover-theme" href="./ads/idplr">Ganhe dinheiro com Produtos PLR?</a>
-         <a class="w3-bar-item w3-button w3-white w3-hover-theme" href="./ads/idplr">Preciso investir em Produtos PLR?</a>
-         <a class="w3-bar-item w3-button w3-white w3-hover-theme" href="./ads/idplr">Qual a dimensão desse mercado?</a>
-         <a class="w3-bar-item w3-button w3-white w3-hover-theme" href="./ads/idplr">O que eu ganho com Produtos PLR?</a>         
-      </nav>
-      <!-- Efeito de sobreposição ao abrir a barra lateral em telas pequenas -->
-      <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="Voltar" id="myOverlay"></div>
-      <!-- Conteúdo principal: desloque-o para a direita em 300 pixels quando a barra lateral estiver visível -->
-      <div class="w3-main" style="margin-left:300px; width:100% width-max:100px">
-      <!-- Bloco Vertical 1 Em construção -->
-      <div class="w3-row w3-padding-64" style="margin-center; padding:0px">
-      <div class="w3-twothird w3-container" style="opacity:0.7">
-         <!--    <table style="width:100%" >
-            <tbody>
-            	<tr>
-                                  
-                             		<td><div>
-                                  	<div class="w3-theme w3-center" data-aa="1430786" style="border:0px; border-radius:15px; padding:0; width:100%; height:100%; overflow:hidden">
-                                      <a href="https://a-ads.com/?partner=1430786">Patrocinado</a>
-            		
-            <iframe data-aa="1430786" src="//acceptable.a-ads.com/1430786" scrolling="no" style="border:0px; padding:32; width:100%; height:100%; overflow:hidden" allowtransparency="true"></iframe>
-                                      <a href="https://a-ads.com?partner=1430786">Anonymous Ads</a>
-            	</div></div></td>  
-                                 
-                                  <td class="w3-theme w3-center" style="border:0px; border-radius:15px; padding:32; width:100%; height:100%; overflow:hidden">
-                                  <a href="./ads/idplr">Patrocinado</a>
-                                  <a href="./ads/idplr"><img border-radius="0px" height="90px" width="100%" alt="23 Formas de Como Ganhar Dinheiro com produtos PLR" src="./ads/728x90[1].jpg"/></a>
-                                  </td> 
-            	</tr>
-            </tbody>
-            </table> -->
-         <!-- DivTable.com -->
-         <center>
-            <h2 class="w3-text-white w3-padding-32 w3-theme">Ganhe dinheiro com Produtos "PLR"</h2>
+        </div>
+        <!-- Sidebar -->
+        <nav class="w3-sidebar w3-bar-block w3-collapse w3-large w3-theme-l5 w3-animate-left" id="mySidebar">
+            <center>
+                <a href="javascript:void(0)" onclick="w3_close()" class="w3-center w3-white w3-xlarge w3-padding-16  w3-hover-theme w3-hide-large" title="Voltar">
+                <i class="fa fa-arrow-left" style="width:100%"></i>
+                </a>				
+            </center>
+            </a>
+            <h5 class="w3-bar-item w3-theme w3-text-white">PLR - Negócio Lucrativo <span class="fas fa-hand-holding-usd w3-theme" style='font-size:18px'></span></h5>
+            <a class="w3-bar-item w3-button w3-white w3-hover-theme" href="./ads/idplr">O que é "PLR"?</a>
+            <a class="w3-bar-item w3-button w3-white w3-hover-theme" href="./ads/idplr">Como usar um Produto PLR?</a>
+            <a class="w3-bar-item w3-button w3-white w3-hover-theme" href="./ads/idplr">Ganhe dinheiro com Produtos PLR?</a>
+            <a class="w3-bar-item w3-button w3-white w3-hover-theme" href="./ads/idplr">Preciso investir em Produtos PLR?</a>
+            <a class="w3-bar-item w3-button w3-white w3-hover-theme" href="./ads/idplr">Qual a dimensão desse mercado?</a>
+            <a class="w3-bar-item w3-button w3-white w3-hover-theme" href="./ads/idplr">O que eu ganho com Produtos PLR?</a>         
+        </nav>
+        <!-- Efeito de sobreposição ao abrir a barra lateral em telas pequenas -->
+        <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="Voltar" id="myOverlay"></div>
+        <!-- Conteúdo principal: desloque-o para a direita em 300 pixels quando a barra lateral estiver visível -->
+        <div class="w3-main" style="margin-left:300px; width:100% width-max:100px">
+        <!-- Bloco Vertical 1 Em construção -->
+        <div class="w3-row w3-padding-64" style="margin-center; padding:0px">
+        <div class="w3-twothird w3-container" style="opacity:0.7">
+            <!--    <table style="width:100%" >
+                <tbody>
+                	<tr>
+                                      
+                                 		<td><div>
+                                      	<div class="w3-theme w3-center" data-aa="1430786" style="border:0px; border-radius:15px; padding:0; width:100%; height:100%; overflow:hidden">
+                                          <a href="https://a-ads.com/?partner=1430786">Patrocinado</a>
+                		
+                <iframe data-aa="1430786" src="//acceptable.a-ads.com/1430786" scrolling="no" style="border:0px; padding:32; width:100%; height:100%; overflow:hidden" allowtransparency="true"></iframe>
+                                          <a href="https://a-ads.com?partner=1430786">Anonymous Ads</a>
+                	</div></div></td>  
+                                     
+                                      <td class="w3-theme w3-center" style="border:0px; border-radius:15px; padding:32; width:100%; height:100%; overflow:hidden">
+                                      <a href="./ads/idplr">Patrocinado</a>
+                                      <a href="./ads/idplr"><img border-radius="0px" height="90px" width="100%" alt="23 Formas de Como Ganhar Dinheiro com produtos PLR" src="./ads/728x90[1].jpg"/></a>
+                                      </td> 
+                	</tr>
+                </tbody>
+                </table> -->
+            <!-- DivTable.com -->
+            <center>
+                <h2 class="w3-text-white w3-padding-32 w3-theme">Ganhe dinheiro com Produtos "PLR"</h2>
+                <p style="border:0px; border-radius:15px; padding:64; width:100%; height:100%; overflow:hidden"></p>
+                <h2 class="w3-text-red">23 Formas de Como Ganhar Dinheiro com produtos PLR</h2>
+            </center>
             <p style="border:0px; border-radius:15px; padding:64; width:100%; height:100%; overflow:hidden"></p>
-            <h2 class="w3-text-red">23 Formas de Como Ganhar Dinheiro com produtos PLR</h2>
-         </center>
-         <p style="border:0px; border-radius:15px; padding:64; width:100%; height:100%; overflow:hidden"></p>
-         <div class="w3-theme w3-center" style="border:0px; border-radius:15px; padding:64; width:100%; height:100%; overflow:hidden">
-            <a href="./ads/idplr">Patrocinado</a>
-            <a href="./ads/idplr"><img border-radius="0px" height="90px" width="100%" alt="23 Formas de Como Ganhar Dinheiro com produtos PLR" src="./ads/728x90[1].jpg"/></a>
-         </div>
-         <h4>
-            <p style="border:0px; border-radius:15px; padding:64; width:100%; height:100%; overflow:hidden"></p>
-            <ol style="text-align: justify;">
-               <li><strong>Use-o como um conteúdo para o seu site</strong> ou um blog. Desmere ebooks e relatórios em artigos ou posts em blogs.</li>
-               <li><strong>Venda produtos em seu site</strong>, <strong>diretórios</strong>,fóruns, eBay, amazon, Tradebit, etc.</li>
-               <li><strong>Crie seu próprio site de assinatura</strong> ou uma loja web.</li>
-               <li><strong>Use o conteúdo para configurar um boletim informativo</strong> para seus assinantes.</li>
-               <li><strong>Use o conteúdo para seus autoresponders.</strong></li>
-               <li><strong>Você pode organizar uma Joint Venture lucrativa</strong> com outros profissionais de marketing da Internet e criar pacotes especiais.</li>
-               <li><strong>Dê o produto como um presente para sua nova lista</strong>, faça seus assinantes felizes - você pode até mesmo colocar seu link de afiliado nele para obter algum lucro extra.</li>
-               <li><strong>Faça um eCourse e dê para seus assinantes</strong> — esta é uma ótima maneira de construir uma lista.</li>
-               <li><strong>Ganhar dinheiro com o Google AdSense</strong> — use o conteúdo para criar toneladas de sites do Google AdSense.</li>
-               <li><strong>Use o produto como bônus para o seu produto principal</strong> e aumente suas conversões.</li>
-               <li><strong>Promova algum produto afiliado no ClickBank ou JVzoo</strong> e ofereça o PLR como um bônus para os clientes que vêm através do seu link de afiliado.</li>
-               <li><strong>Use o conteúdo PLR para criar seu próprio produto de informação</strong> que você pode vender no ClickBank e JVzoo — configure seu próprio programa de afiliados e faça com que outros promovam seu produto. Para iniciar seu programa de afiliados, escreva um relatório curto e útil, mencione seu produto lá e permita que seus afiliados coloquem seus links de afiliados. Uma vez que seus afiliados comecem a doá-lo para seus visitantes ou assinantes, você estará ganhando dinheiro com piloto automático por muitos anos.</li>
-               <li><strong>Transforme o produto em tutorial de vídeo que você pode vender</strong>, dar aos seus visitantes ou enviar para vários diretórios de vídeo como YouTube, Vimeo para ganhar tráfego de alta qualidade e backlinks para o seu site.</li>
-               <li><strong>Transforme o conteúdo em séries de áudio ou podcast</strong>.</li>
-               <li><strong>Transforme o conteúdo em aplicativos móveis</strong> — Esta é uma nova maneira popular de ganhar dinheiro em um mercado quente.</li>
-               <li><strong>Crie um produto tangível</strong> — Coloque o produto PLR em CDs ou DVDs e envie-os para seus clientes. O custo de envio de um CD/DVD é barato e as pessoas gostam de colocar coisas em seu endereço.</li>
-               <li><strong>Construa um site com PLR e o vire</strong> — Você pode vendê-lo em sites populares como Flippa.com ou fóruns de marketing como o Warrior Forum.</li>
-               <li><strong>Use o conteúdo para criar comunicado de imprensa informativo</strong> — Envie-o para sites de comunicado de imprensa para obter tráfego de alta qualidade e backlinks permanentes.</li>
-               <li><strong>Reescreva o conteúdo e envie-o para diretórios de artigos ou como um post de blog convidado em blogs de outras pessoas</strong> — Esta é uma das melhores maneiras de construir backlinks de tráfego e qualidade para o seu site</li>
-               <li><strong>Faça livros impressos ou relatórios</strong> — Muitas pessoas ainda preferem ler um livro ao vivo de verdade.</li>
-               <li><strong>Use o conteúdo para webinar ou teleseminar</strong>.</li>
-               <li><strong>Traduza os produtos PLR em outros idiomas para alcançar um novo público!</strong></li>
-               <li>Por último, mas não menos importante, você pode <strong>aprender e usar as informações dentro deste pacote você mesmo</strong>.</li>
-            </ol>
-         </h4>
-         <!-- Button CTA -->
-         <a href="./ads/idplr">
-            <h2 class="w3-text-white w3-center w3-padding-32 w3-orange">Clique Aqui Para ter Acesso Gratuito</h2>
-         </a>
-      </div>
-      <!--Container-AD-KeAds-->
-      <div class="w3-third w3-container" style="opacity:0.7">
-      <!-- Pausado -->
-      <!--<div class="w3-border w3-padding-large w3-padding-64 w3-center"></div>-->
-      <table>
-         <tbody>
-            <tr>
-               <td>
-                  <div style="padding:7px">
-                     <div class="w3-theme w3-center" style="border:0px; border-radius:15px; padding:64; width:100%; height:100%; overflow:hidden">
-                        <a href="./ads/idplr">KeAds</a>
-                        <a href="./ads/idplr"><img height="600" width="100%" alt="Instant Access To Over 12500+PRODUTOS PLR" src="./ads/idplr.300x600.png" /></a>
-                        <a href="./ads/idplr.com">KeAds</a>
-                     </div>
-               </td>
-            </tr>
-         </tbody>
-      </table>
-      <!-- Pausado -->
-      </div>
-      <!--Container-KeAds-FIM-->
-      <!--Container-AD-1-->
-      <div class="w3-third w3-container" style="opacity:0.7">
-         <!-- Pausado -->
-         <!--<div class="w3-border w3-padding-large w3-padding-64 w3-center"></div>-->
-         <table>
+            <div class="w3-theme w3-center" style="border:0px; border-radius:15px; padding:64; width:100%; height:100%; overflow:hidden">
+                <a href="./ads/idplr">Patrocinado</a>
+                <a href="./ads/idplr"><img border-radius="0px" height="90px" width="100%" alt="23 Formas de Como Ganhar Dinheiro com produtos PLR" src="./ads/728x90[1].jpg"/></a>
+            </div>
+            <h4>
+                <p style="border:0px; border-radius:15px; padding:64; width:100%; height:100%; overflow:hidden"></p>
+                <ol style="text-align: justify;">
+                    <li><strong>Use-o como um conteúdo para o seu site</strong> ou um blog. Desmere ebooks e relatórios em artigos ou posts em blogs.</li>
+                    <li><strong>Venda produtos em seu site</strong>, <strong>diretórios</strong>,fóruns, eBay, amazon, Tradebit, etc.</li>
+                    <li><strong>Crie seu próprio site de assinatura</strong> ou uma loja web.</li>
+                    <li><strong>Use o conteúdo para configurar um boletim informativo</strong> para seus assinantes.</li>
+                    <li><strong>Use o conteúdo para seus autoresponders.</strong></li>
+                    <li><strong>Você pode organizar uma Joint Venture lucrativa</strong> com outros profissionais de marketing da Internet e criar pacotes especiais.</li>
+                    <li><strong>Dê o produto como um presente para sua nova lista</strong>, faça seus assinantes felizes - você pode até mesmo colocar seu link de afiliado nele para obter algum lucro extra.</li>
+                    <li><strong>Faça um eCourse e dê para seus assinantes</strong> — esta é uma ótima maneira de construir uma lista.</li>
+                    <li><strong>Ganhar dinheiro com o Google AdSense</strong> — use o conteúdo para criar toneladas de sites do Google AdSense.</li>
+                    <li><strong>Use o produto como bônus para o seu produto principal</strong> e aumente suas conversões.</li>
+                    <li><strong>Promova algum produto afiliado no ClickBank ou JVzoo</strong> e ofereça o PLR como um bônus para os clientes que vêm através do seu link de afiliado.</li>
+                    <li><strong>Use o conteúdo PLR para criar seu próprio produto de informação</strong> que você pode vender no ClickBank e JVzoo — configure seu próprio programa de afiliados e faça com que outros promovam seu produto. Para iniciar seu programa de afiliados, escreva um relatório curto e útil, mencione seu produto lá e permita que seus afiliados coloquem seus links de afiliados. Uma vez que seus afiliados comecem a doá-lo para seus visitantes ou assinantes, você estará ganhando dinheiro com piloto automático por muitos anos.</li>
+                    <li><strong>Transforme o produto em tutorial de vídeo que você pode vender</strong>, dar aos seus visitantes ou enviar para vários diretórios de vídeo como YouTube, Vimeo para ganhar tráfego de alta qualidade e backlinks para o seu site.</li>
+                    <li><strong>Transforme o conteúdo em séries de áudio ou podcast</strong>.</li>
+                    <li><strong>Transforme o conteúdo em aplicativos móveis</strong> — Esta é uma nova maneira popular de ganhar dinheiro em um mercado quente.</li>
+                    <li><strong>Crie um produto tangível</strong> — Coloque o produto PLR em CDs ou DVDs e envie-os para seus clientes. O custo de envio de um CD/DVD é barato e as pessoas gostam de colocar coisas em seu endereço.</li>
+                    <li><strong>Construa um site com PLR e o vire</strong> — Você pode vendê-lo em sites populares como Flippa.com ou fóruns de marketing como o Warrior Forum.</li>
+                    <li><strong>Use o conteúdo para criar comunicado de imprensa informativo</strong> — Envie-o para sites de comunicado de imprensa para obter tráfego de alta qualidade e backlinks permanentes.</li>
+                    <li><strong>Reescreva o conteúdo e envie-o para diretórios de artigos ou como um post de blog convidado em blogs de outras pessoas</strong> — Esta é uma das melhores maneiras de construir backlinks de tráfego e qualidade para o seu site</li>
+                    <li><strong>Faça livros impressos ou relatórios</strong> — Muitas pessoas ainda preferem ler um livro ao vivo de verdade.</li>
+                    <li><strong>Use o conteúdo para webinar ou teleseminar</strong>.</li>
+                    <li><strong>Traduza os produtos PLR em outros idiomas para alcançar um novo público!</strong></li>
+                    <li>Por último, mas não menos importante, você pode <strong>aprender e usar as informações dentro deste pacote você mesmo</strong>.</li>
+                </ol>
+            </h4>
+            <!-- Button CTA -->
+            <a href="./ads/idplr">
+                <h2 class="w3-text-white w3-center w3-padding-32 w3-orange">Clique Aqui Para ter Acesso Gratuito</h2>
+            </a>
+        </div>
+        <!--Container-AD-KeAds-->
+        <div class="w3-third w3-container" style="opacity:0.7">
+        <!-- Pausado -->
+        <!--<div class="w3-border w3-padding-large w3-padding-64 w3-center"></div>-->
+        <table>
             <tbody>
-               <tr>
-                  <td>
-                     <div>
-                        <div class="w3-theme w3-center" data-aa="1444051" style="border:0px; border-radius:15px; padding:0; width:100%; height:100%; overflow:hidden">
-                           <a href="https://a-ads.com/?partner=1444051">Patrocinado</a>
-                           <iframe data-aa="1444051" src="//acceptable.a-ads.com/1444051" scrolling="no" style="border:0px; padding:32; width:100%; height:100%; overflow:hidden" allowtransparency="true"></iframe>
-                           <a href="https://a-ads.com?partner=1444051">Anonymous Ads</a>
-                        </div>
-                  </td>
-               </tr>
+                <tr>
+                    <td>
+                        <div style="padding:7px">
+                            <div class="w3-theme w3-center" style="border:0px; border-radius:15px; padding:64; width:100%; height:100%; overflow:hidden">
+                                <a href="./ads/idplr">KeAds</a>
+                                <a href="./ads/idplr"><img height="600" width="100%" alt="Instant Access To Over 12500+PRODUTOS PLR" src="./ads/idplr.300x600.png" /></a>
+                                <a href="./ads/idplr.com">KeAds</a>
+                            </div>
+                    </td>
+                </tr>
             </tbody>
-         </table>
-         <!-- Pausado -->
-         </div>
-         <!--Container-AD-1-FIM-->
-         <p> </p>
-      </div>
-      <!-- Bloco Vertical 2 Em construção -->
-      <div class="w3-row">
-         <!-- Primeiro Post-->
-         <div class="w3-twothird w3-container">
-            <!-- Pausado --
-               <h1 class="w3-text-teal">Heading</h1>
-               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum
-                 dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-               -- Pausado -->
-         </div>
-         <!-- Quadro de Anúncios -->
-         <div class="w3-third w3-container">
-            <!-- Pausado --
-               <p class="w3-border w3-padding-large w3-padding-32 w3-center">AD</p>
-               <p class="w3-border w3-padding-large w3-padding-64 w3-center">AD</p>
-               -- Pausado -->
-         </div>
-      </div>
-      <div class="w3-row w3-padding-64">
-         <div class="w3-twothird w3-container">
-            <!-- Pausado --
-               <h1 class="w3-text-teal">Heading</h1>
-               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum
-                 dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                 -- Pausado -->
-         </div>
-         <div class="w3-third w3-container">
-            <!-- Pausado --
-               <p class="w3-border w3-padding-large w3-padding-32 w3-center">AD</p>
-               <p class="w3-border w3-padding-large w3-padding-64 w3-center">AD</p>
-               -- Pausado -->
-         </div>
-      </div>
-      <div class="w3-center" style="width:100%">
-         <!-- Pausado 
-            <a href="./ads/idplr"><img alt="Acesso Intantâneo a  12500+PLR Produtos" src="http://www.idplr.com/images/banners/300x600.png" style="width:95%"/></a>
+        </table>
+        <!-- Pausado -->
+        </div>
+        <!--Container-KeAds-FIM-->
+        <!--Container-AD-1-->
+        <div class="w3-third w3-container" style="opacity:0.7">
+            <!-- Pausado -->
+            <!--<div class="w3-border w3-padding-large w3-padding-64 w3-center"></div>-->
+            <table>
+                <tbody>
+                    <tr>
+                        <td>
+                            <div>
+                                <div class="w3-theme w3-center" data-aa="1444051" style="border:0px; border-radius:15px; padding:0; width:100%; height:100%; overflow:hidden">
+                                    <a href="https://a-ads.com/?partner=1444051">Patrocinado</a>
+                                    <iframe data-aa="1444051" src="//acceptable.a-ads.com/1444051" scrolling="no" style="border:0px; padding:32; width:100%; height:100%; overflow:hidden" allowtransparency="true"></iframe>
+                                    <a href="https://a-ads.com?partner=1444051">Anonymous Ads</a>
+                                </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <!-- Pausado -->
             </div>
-             Pausado -->
-         <!-- Paginação -->
-         <div class="w3-center w3-padding-32">
-            <div class="w3-bar">
-               <a class="w3-button w3-theme w3-hover-red" href="./ads/dashboard" style="border-radius:10px">Todos</a>
-               <!-- Em construção
-                  <a class="w3-button w3-hover-black" href="#">2</a>
-                  <a class="w3-button w3-hover-black" href="#">3</a>
-                  <a class="w3-button w3-hover-black" href="#">4</a>
-                  <a class="w3-button w3-hover-black" href="#">5</a>
-                  <a class="w3-button w3-hover-black" href="#">6;</a>
-                  -->    
+            <!--Container-AD-1-FIM-->
+            <p> </p>
+        </div>
+        <!-- Bloco Vertical 2 Em construção -->
+        <div class="w3-row">
+            <!-- Primeiro Post-->
+            <div class="w3-twothird w3-container">
+                <!-- Pausado --
+                    <h1 class="w3-text-teal">Heading</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum
+                      dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    -- Pausado -->
             </div>
-         </div>
-         <center>
-            <footer id="myFooter">
-               <div class="w3-container w3-white w3-opacity-0.7">
-                  <h4>
-                     <spam class="w3-text-theme">KeBlog</spam>
-                  </h4>
-               </div>
-               <div class="w3-container w3-theme">
-                  <p>Feito com <i class='fa fa-heart' style='font-size:14px'></i><a href="https://www.w3schools.com/w3css/default.asp" target="_blank"> em w3.css</a></p>
-               </div>
-            </footer>
-         </center>
-         <!-- END MAIN -->
-         <script>
-            // Receber Sidebar
-            var mySidebar = document.getElementById("mySidebar");
-            
-            // Receba DIV com efeito de sobreposição
-            var overlayBg = document.getElementById("myOverlay");
-            
-            // Alterne entre mostrar e ocultar a barra lateral e adicionar efeito de sobreposição
-            function w3_open() {
-              if (mySidebar.style.display === 'block') {
-                mySidebar.style.display = 'none';
-                overlayBg.style.display = "none";
-              } else {
-                mySidebar.style.display = 'block';
-                overlayBg.style.display = "block";
-              }
-            }
-            
-            // Feche a barra lateral com o botão Fechar
-            function w3_close() {
-              mySidebar.style.display = "none";
-              overlayBg.style.display = "none";
-            }
-         </script>
-         <script>
-            // Get the modal
-            var modal = document.getElementById("myModal");
-            
-            // Get the modal no carregamento
-            var  myBody = document.getElementById("myBody");
-            
-            // Get the <span> element that closes the modal
-            var span = document.getElementsByClassName("close")[0];
-            
-            // When the user clicks the button, open the modal 
-            myBody.onload = setTimeout(function() {myFunction();}, 0)                         
-            
-            // When the user clicks on <span> (x), close the modal
-            span.onclick = function() {
-              modal.style.display = "none";
-            }
-            
-            // When the user clicks anywhere outside of the modal, close it
-            window.onclick = function(event) {
-              if (event.target == modal) {
-                modal.style.display = "none";
-              }
-            }
-         </script>
-         <script>
-            var myVar;
-            var myVar2;
-            
-            function myFunction() {
-              myVar = setTimeout(showPage, tloader);
-              
-            }
-            
-            function showPage() {
-              document.getElementById("loader").style.display = "none";
-              document.getElementById("myDiv").style.display = "block";
-              myVar2 = setTimeout(function(){ modal.style.display = "block";}, tmodal);
-              
-            }
-         </script>
-      </div>
-   </body>
+            <!-- Quadro de Anúncios -->
+            <div class="w3-third w3-container">
+                <!-- Pausado --
+                    <p class="w3-border w3-padding-large w3-padding-32 w3-center">AD</p>
+                    <p class="w3-border w3-padding-large w3-padding-64 w3-center">AD</p>
+                    -- Pausado -->
+            </div>
+        </div>
+        <div class="w3-row w3-padding-64">
+            <div class="w3-twothird w3-container">
+                <!-- Pausado --
+                    <h1 class="w3-text-teal">Heading</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum
+                      dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                      -- Pausado -->
+            </div>
+            <div class="w3-third w3-container">
+                <!-- Pausado --
+                    <p class="w3-border w3-padding-large w3-padding-32 w3-center">AD</p>
+                    <p class="w3-border w3-padding-large w3-padding-64 w3-center">AD</p>
+                    -- Pausado -->
+            </div>
+        </div>
+        <div class="w3-center" style="width:100%">
+            <!-- Pausado 
+                <a href="./ads/idplr"><img alt="Acesso Intantâneo a  12500+PLR Produtos" src="http://www.idplr.com/images/banners/300x600.png" style="width:95%"/></a>
+                </div>
+                 Pausado -->
+            <!-- Paginação -->
+            <div class="w3-center w3-padding-32">
+                <div class="w3-bar">
+                    <a class="w3-button w3-theme w3-hover-red" href="./ads/dashboard" style="border-radius:10px">Todos</a>
+                    <!-- Em construção
+                        <a class="w3-button w3-hover-black" href="#">2</a>
+                        <a class="w3-button w3-hover-black" href="#">3</a>
+                        <a class="w3-button w3-hover-black" href="#">4</a>
+                        <a class="w3-button w3-hover-black" href="#">5</a>
+                        <a class="w3-button w3-hover-black" href="#">6;</a>
+                        -->    
+                </div>
+            </div>
+            <center>
+                <footer id="myFooter">
+                    <div class="w3-container w3-white w3-opacity-0.7">
+                        <h4>
+                            <spam class="w3-text-theme">KeBlog</spam>
+                        </h4>
+                    </div>
+                    <div class="w3-container w3-theme">
+                        <p>Feito com <i class='fa fa-heart' style='font-size:14px'></i><a href="https://www.w3schools.com/w3css/default.asp" target="_blank"> em w3.css</a></p>
+                    </div>
+                </footer>
+            </center>
+            <!-- END MAIN -->
+            <script>
+                // Receber Sidebar
+                var mySidebar = document.getElementById("mySidebar");
+                
+                // Receba DIV com efeito de sobreposição
+                var overlayBg = document.getElementById("myOverlay");
+                
+                // Alterne entre mostrar e ocultar a barra lateral e adicionar efeito de sobreposição
+                function w3_open() {
+                  if (mySidebar.style.display === 'block') {
+                    mySidebar.style.display = 'none';
+                    overlayBg.style.display = "none";
+                  } else {
+                    mySidebar.style.display = 'block';
+                    overlayBg.style.display = "block";
+                  }
+                }
+                
+                // Feche a barra lateral com o botão Fechar
+                function w3_close() {
+                  mySidebar.style.display = "none";
+                  overlayBg.style.display = "none";
+                }
+            </script>
+            <script>
+                // Get the modal
+                var modal = document.getElementById("myModal");
+                
+                // Get the modal no carregamento
+                var  myBody = document.getElementById("myBody");
+                
+                // Get the <span> element that closes the modal
+                var span = document.getElementsByClassName("close")[0];
+                
+                // Carrega as funções de inicialização do documento
+                myBody.onload = setTimeout(function() {myFunction();}, tIniciar)                         
+                
+                // When the user clicks on <span> (x), close the modal
+                span.onclick = function() {
+                  modal.style.display = "none";
+                }
+                
+                // When the user clicks anywhere outside of the modal, close it
+                window.onclick = function(event) {
+                  if (event.target == modal) {
+                    modal.style.display = "none";
+                  }
+                }
+            </script>
+            <script>
+                var myVar;
+                var myVar2;
+                
+                function myFunction() {
+                	// Exiba 'myBody'
+                  	document.getElementById("myBody").style.display = "block";
+                  	// Interrompa a exibição do Carregador
+                    myVar = setTimeout(showPage, tLoader);
+                  
+                }
+                
+                function showPage() {
+                  document.getElementById("loader").style.display = "none";
+                  document.getElementById("myDiv").style.display = "block";
+                  myVar2 = setTimeout(function(){ modal.style.display = "block";}, tModal);
+                  
+                }
+            </script>
+        </div>
+    </body>
 </html>
