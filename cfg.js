@@ -6,7 +6,7 @@ var tIniciar = 0;
 var tLoader = 3000;
 // Exibe o Modal após segundos 
 var tModal = 5000;
-var linkAff = "./ads/idplr"
+var linkAff = "./idplr"
 var linkAffClose = linkAff;
 var linkAffNext = linkAff;
 var linkAffOff = linkAff;
