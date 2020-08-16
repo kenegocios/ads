@@ -40,11 +40,9 @@
     </div>
     
     <!--Seu Link de Afiliado-->
-    <script id="Setlinks">
-        
+    <script id="Setlinks">        
         // Defina um link de afiliado
         var linkAff = './idplr';
-
         // Altere o link por 'linkAff'
         // Use onclick="SetLinkAff(this)" no objeto que alterar o atributo 'href'
         //Ex: <a onclick="SetLinkAff(this)">Exemplo</a>
@@ -52,7 +50,6 @@
             x.target = "_blank"
             x.href = linkAff
         }
-
         function home() {
             location.href = location;
         }
@@ -95,12 +92,12 @@
                 </a>
             </center>
             <h5 class="w3-bar-item w3-theme w3-text-white">PLR - Negócio Lucrativo <span class="fas fa-hand-holding-usd w3-theme" style='font-size:18px'></span></h5>
-            <a class="w3-bar-item w3-button w3-white w3-hover-theme" href="./idplr">O que é "PLR"?</a>
-            <a class="w3-bar-item w3-button w3-white w3-hover-theme" href="./idplr">Como usar um Produto PLR?</a>
-            <a class="w3-bar-item w3-button w3-white w3-hover-theme" href="./idplr">Ganhe dinheiro com Produtos PLR?</a>
-            <a class="w3-bar-item w3-button w3-white w3-hover-theme" href="./idplr">Preciso investir em Produtos PLR?</a>
-            <a class="w3-bar-item w3-button w3-white w3-hover-theme" href="./idplr">Qual a dimensão desse mercado?</a>
-            <a class="w3-bar-item w3-button w3-white w3-hover-theme" href="./idplr">O que eu ganho com Produtos PLR?</a>
+            <a class="w3-bar-item w3-button w3-white w3-hover-theme" onclick="SetLinkAff(this)">O que é "PLR"?</a>
+            <a class="w3-bar-item w3-button w3-white w3-hover-theme" onclick="SetLinkAff(this)">Como usar um Produto PLR?</a>
+            <a class="w3-bar-item w3-button w3-white w3-hover-theme" onclick="SetLinkAff(this)">Ganhe dinheiro com Produtos PLR?</a>
+            <a class="w3-bar-item w3-button w3-white w3-hover-theme" onclick="SetLinkAff(this)">Preciso investir em Produtos PLR?</a>
+            <a class="w3-bar-item w3-button w3-white w3-hover-theme" onclick="SetLinkAff(this)">Qual a dimensão desse mercado?</a>
+            <a class="w3-bar-item w3-button w3-white w3-hover-theme" onclick="SetLinkAff(this)">O que eu ganho com Produtos PLR?</a>
         </nav>
         <!-- Efeito de sobreposição ao abrir a barra lateral em telas pequenas -->
         <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="Voltar" id="myOverlay"></div>
@@ -144,8 +141,8 @@
                     <!--Banner-->
                     <p style="border:0px; border-radius:15px; padding:64; width:100%; height:100%; overflow:hidden"></p>
                     <div class="w3-theme w3-center" style="border:0px; border-radius:15px; padding:64; width:100%; height:100%; overflow:hidden">
-                        <a href="./idplr">Produtos PLR - Baixe Gratuitamente</a>
-                        <a href="./idplr"><img border-radius="0px" height="90px" width="100%" alt="23 Formas de Como Ganhar Dinheiro com produtos PLR" src="./728x90[1].jpg" /></a>
+                        <a onclick="SetLinkAff(this)">Produtos PLR - Baixe Gratuitamente</a>
+                        <a onclick="SetLinkAff(this)"><img border-radius="0px" height="90px" width="100%" alt="23 Formas de Como Ganhar Dinheiro com produtos PLR" src="./728x90[1].jpg" /></a>
                     </div>
                     <!--Conteúdo-->
                     <h4>
@@ -184,7 +181,7 @@
                         </ol>
                     </h4>
                     <!-- Button CTA -->
-                    <a href="./idplr">
+                    <a onclick="SetLinkAff(this)">
                         <h2 class="w3-text-white w3-center w3-padding-32 w3-orange">Clique Aqui Para ter Acesso Gratuito</h2>
                     </a>
                 </div>
@@ -198,9 +195,9 @@
                                 <td>
                                     <div style="padding:0px">
                                         <div class="w3-theme w3-center" style="border:0px; border-radius:15px; padding:32; width:100%; height:100%; overflow:hidden">
-                                            <a href="./idplr">KeAds</a>
-                                            <a href="./idplr"><img height="600" width="100%" alt="Instant Access To Over 12500+PRODUTOS PLR" src="./idplr.300x600.png" /></a>
-                                            <a href="./idplr.com">KeAds</a>
+                                            <a onclick="SetLinkAff(this)">KeAds</a>
+                                            <a onclick="SetLinkAff(this)"><img height="600" width="100%" alt="Instant Access To Over 12500+PRODUTOS PLR" src="./idplr.300x600.png" /></a>
+                                            <a onclick="SetLinkAff(this)">KeAds</a>
                                         </div>
                                     </div>
                                 </td>
@@ -269,7 +266,7 @@
 
                 <div class="w3-center w3-padding-32">
                     <div class="w3-bar">
-                        <a class="w3-button w3-theme w3-hover-red" href="./dashboard" style="border-radius:10px">Todos</a>
+                        <a class="w3-button w3-theme w3-hover-red" style="border-radius:10px" onclick="home()">Todos</a>
                         <!-- Em construção
                         <a class="w3-button w3-hover-black" href="#">2</a>
                         <a class="w3-button w3-hover-black" href="#">3</a>
