@@ -40,19 +40,25 @@
     </div>
     
     <!--Seu Link de Afiliado-->
-    <script id="linkAff">
+    <script id="Setlinks">
+        
         // Defina um link de afiliado
         var linkAff = './idplr';
-    </script>
-    <script>
+
         // Altere o link por 'linkAff'
         // Use onclick="SetLinkAff(this)" no objeto que alterar o atributo 'href'
+        //Ex: <a onclick="SetLinkAff(this)">Exemplo</a>
         function SetLinkAff(x) {
             x.target = "_blank"
             x.href = linkAff
         }
-    </script>    
-    <!--Controle de Tempo - TimeEvents-->
+
+        function home() {
+            location.href = location;
+        }
+    </script>
+    
+    <!--Controle de Tempo para eventos-->
     <script id="TimeEvents" src='./cfg.js'></script>    
     <!--Fontes-->
     <script src='https://kit.fontawesome.com/a076d05399.js'></script>
@@ -68,8 +74,8 @@
         <div class="w3-top">
             <div class="w3-bar w3-white w3-top w3-left-align w3-large">
                 <a class="w3-bar-item w3-button w3-left w3-hide-white w3-hover-theme w3-large w3-theme" href="javascript:void(0)" onclick="w3_open()"><i class="fa fa-bars"></i></a>
-                <a href="./dashboard" class="w3-bar-item w3-button w3-white w3-text-theme w3-hover-theme">KeBlog</a>
-                <a onclick="SetLinkAff(this)" class="w3-bar-item w3-button w3-white w3-text-theme w3-hover-theme">PLR Dowloads</a>
+                <a class="w3-bar-item w3-button w3-white w3-text-theme w3-hover-theme" onclick="home()" >KeBlog</a>
+                <a class="w3-bar-item w3-button w3-white w3-text-theme w3-hover-theme" onclick="SetLinkAff(this)" >PLR Dowloads</a>
                 <!-- Em construção
                     <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Values</a>
                     <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hover-white">News</a>
