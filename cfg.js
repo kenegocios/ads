@@ -11,5 +11,5 @@ var tmodalWindow = 30000; // Acionado quando clica fora do modal, dentro da pág
 //var meuLink = "Meu Link"
 var linkModalClose = linkAff; // Link do botão Fechar
 var linkModalNext = linkAff; // Link do botão Avançar
-var linkModalWindow = linkAff; // Link para quando clica fora do modal
-var linkModalInativo = linkAff; // Link para quando fica inativo por um tempo
+var linkModalWindow = location.href; // Link para quando clica fora do modal
+var linkModalInativo = location.href; // Link para quando fica inativo por um tempo
