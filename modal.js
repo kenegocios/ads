@@ -58,6 +58,7 @@ function myFunction() {
 function showPage() {
     document.getElementById("loader").style.display = "none"; //Oculte o Loader (carregador)
     document.getElementById("myDiv").style.display = "block"; // Exiba myDiv 
+    document.getElementById("prgct").style.display = "block"; //Exiba ScrollTop
     myVar2 = setTimeout(function() { // Exiba 'myModal' em um tempo determinada
         modal.style.display = "block";
     }, tModal);
