@@ -13,12 +13,12 @@ Bloco de código destacado da sintaxe
 - Com marcadores
 - Lista
 
-1. Numberado
+1. Numerado
 2. Lista
 
 **Negrito** and _Italico_ and `Codigo` text
 
-[Link](url) and ![Image](src)
+[Link](https://kenegocios.github.io/ads/1616435767801.jpg) and ![Image](https://kenegocios.github.io/ads/1616435767801.jpg)
 Para obter mais detalhes, consulte o GitHub Flavored Markdown.
 
 Temas de Jekyll
