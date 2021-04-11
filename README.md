@@ -18,7 +18,7 @@ Bloco de código destacado da sintaxe
 
 **Negrito** and _Italico_ and `Codigo` text
 
-[Link](https://kenegocios.github.io/ads/1616435767801.jpg) and ![Image](https://kenegocios.github.io/ads/1616435767801.jpg)
+[Link](https://kenegocios.github.io/ads/1616435767801.jpg) ![Image](https://kenegocios.github.io/ads/1616435767801.jpg)
 Para obter mais detalhes, consulte o GitHub Flavored Markdown.
 
 Temas de Jekyll
