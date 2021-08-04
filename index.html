@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        .button {
+            display: inline-block;
+            border-radius: 8px;
+            background-color: #836FFF;
+            border: none;
+            color: #FFFFFF;
+            text-align: center;
+            font-size: 20px;
+            padding: 15px;
+            width: 100%;
+            max-width: 270px;
+            transition: all 0.5s;
+            cursor: pointer;
+            margin: 10px;
+        }
+
+        .button span {
+            cursor: pointer;
+            display: inline-block;
+            position: relative;
+            transition: 0.5s;
+            text-decoration-style: none;
+            font-family: Arial, Helvetica, sans-serif
+        }
+
+        .button span:after {
+            content: '\00bb';
+            position: absolute;
+            opacity: 0;
+            top: 0;
+            right: -20px;
+            transition: 0.5s;
+        }
+        .button:hover {
+            background-color: #ff8000;	
+            
+        }
+
+        .button:hover span {
+        
+            padding-right: 25px;
+        }
+
+        .button:hover span:after {
+        
+            opacity: 1;
+            right: 0;
+        }
+
+        div {
+            background-color: #ffffff;
+            max-width: 300px;
+            width:auto;
+            max-height: auto;
+            height: device-height;
+            margin: auto;
+            border: 2px solid #fffeee;
+            border-radius: 8px;
+            padding: 25px;
+            margin-top: 20px;
+            text-align: center;
+            float: center;
+            opacity:0.95;
+        }
+    </style>
+</head>
+
+<body style="
+background-color: #836FFF;">
+
+    <div style="vertical-align:middle; overflow: none; margin:auto">
+        <h2 class="mylinks" style='font-family: Arial, Helvetica, sans-serif'>Cashback e Promoções</h2>
+        <h4 class="mylinks" style='font-family: Arial, Helvetica, sans-serif'>As Melhores Lojas com Cashback em suas compras online</h4>
+        <button id="1" class="button" onclick="btnclick('3ygrypt', 'Meliuz')" target="_blank" style="vertical-align:middle"><span>Méliuz</span></button></a>
+        <button id="2" class="button" onclick="btnclick('2SJyXOS', 'Mercado' + 'Pago')" target="_blank" style="vertical-align:middle"><span>Mercado Pago</span></button></a>
+        <button id="3" class="button" onclick="btnclick('3dCnlEM', 'PicPay')" target="_blank" style="vertical-align:middle"><span>PicPay</span></button></a>
+        <button id="4" class="button" onclick="btnclick('3qKxDI5', 'Magazine JMiranda')" target="_blank" style="vertical-align:middle"><span>Parceiro Magalu</span></button></a>
+        <button id="5" class="button" onclick="btnclick('2SJkwKD', 'Cuponeria')" target="_blank" style="vertical-align:middle"><span>Cuponeria</span></button></a>
+        <button id="6" class="button" onclick="btnclick('3xftzlN', 'Next')" target="_blank" style="vertical-align:middle"><span>Next</span></button></a>
+        <button id="7" class="button" onclick="btnclick('3hrtDrM', 'RecargaPay')" target="_blank" style="vertical-align:middle"><span>RecargaPay</span></button></a>
+        <button id="8" class="button" onclick="btnclick('3hk4BMB', 'Nubank')" target="_blank" style="vertical-align:middle"><span>Nubank</span></button></a>
+        <button id="9" class="button" onclick="btnclick('2UjXBpU', 'Monetizze')" target="_blank" style="vertical-align:middle"><span>Monetizze</span></button></a>
+        <button id="10" class="button" onclick="btnclick('3wejmEN', 'Uninta')" target="_blank" style="vertical-align:middle"><span>Uninta</span></button></a>
+</div>
+    <script>
+        function btnclick(link, description) {
+            var passaValor= function(var1, var2)
+            {
+             window.location = "https://kenegocios.github.io/i/goto?r=" + var1 + "&" + "id=" + var2;
+            }
+            // 
+            passaValor(link, description);
+        }
+    </script>
+</body>
+
+</html>
